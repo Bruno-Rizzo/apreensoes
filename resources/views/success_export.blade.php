@@ -22,7 +22,9 @@
 <p><span style="margin-right: 10px">Diretor: <i>{{$item->director_name}}</i></span> ID: <i>{{$item->director_id}}</i></p>
 <p><span style="margin-right: 10px">Subdiretor: <i>{{$item->subdirector_name}}</i></span> ID: <i>{{$item->subdirector_id}}</i></p>
 <p><span style="margin-right: 10px">Chefe de Segurança: <i>{{$item->security_boss_name}}</i></span> ID: <i>{{$item->security_boss_id}}</i></p>
-<p>Número do R.O.: <i> {{$item->ro_name}}</p>
+<p><span style="margin-right: 10px">Chefe de Turma: <i>{{$item->team_boss_name}}</i></span> ID: <i>{{$item->team_boss_id}}</i></p>
+<p>Número do R.O.: <i> {{$item->ro_number}}</p>
+<p>Número do Lacre: <i> {{$item->seal_number}}</p>
 <p>Dinâmica do Fato: <i> {{$item->dynamics_of_fact}}</i></p>
 <hr>
 @endforeach

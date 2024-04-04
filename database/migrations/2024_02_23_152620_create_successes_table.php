@@ -27,8 +27,11 @@ return new class extends Migration
             $table->string('subdirector_id');
             $table->string('security_boss_name');
             $table->string('security_boss_id');
-            $table->string('ro_name');
-            $table->text('dynamics_of_fact');
+            $table->string('team_boss_name');
+            $table->string('team_boss_id');
+            $table->string('ro_number')->nullable();
+            $table->string('seal_number')->nullable();
+            $table->text('dynamics_of_fact')->nullable();
             $table->timestamps();
         });
     }

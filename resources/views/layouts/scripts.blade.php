@@ -1,18 +1,18 @@
  <!-- Backend Bundle JavaScript -->
- <script src="../assets/js/backend-bundle.min.js"></script>
-    
+ <script src="{{asset('/assets/js/backend-bundle.min.js')}}"></script>
+
  <!-- Table Treeview JavaScript -->
- <script src="../assets/js/table-treeview.js"></script>
- 
+ <script src="{{asset('/assets/js/table-treeview.js')}}"></script>
+
  <!-- Chart Custom JavaScript -->
- <script src="../assets/js/customizer.js"></script>
- 
+ <script src="{{asset('/assets/js/customizer.js')}}"></script>
+
  <!-- Chart Custom JavaScript -->
- <script async src="../assets/js/chart-custom.js"></script>
+ <script async src="{{asset('/assets/js/chart-custom.js')}}"></script>
  <!-- Chart Custom JavaScript -->
- <script async src="../assets/js/slider.js"></script>
- 
+ <script async src="{{asset('/assets/js/slider.js')}}"></script>
+
  <!-- app JavaScript -->
- <script src="../assets/js/app.js"></script>
- 
- <script src="../assets/vendor/moment.min.js"></script>
+ <script src="{{asset('/assets/js/app.js')}}"></script>
+
+ <script src="{{asset('/assets/vendor/moment.min.js')}}"></script>

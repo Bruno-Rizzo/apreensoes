@@ -26,7 +26,10 @@ class Success extends Model
             'subdirector_id',
             'security_boss_name',
             'security_boss_id',
-            'ro_name',
+            'team_boss_name',
+            'team_boss_id',
+            'ro_number',
+            'seal_number',
             'dynamics_of_fact'
     ];
 

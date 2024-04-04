@@ -27,4 +27,19 @@ class SuccessController extends Controller
         Success::create($request->all());
         return back()->with('success','O êxito foi cadastrado!');
     }
+
+    public function edit(Success $success)
+    {
+        return view('success_edit', compact('success'));
+    }
+
+    public function update(Request $request, Success $success)
+    {
+        // dd($request->only('ro_number', 'seal_number', 'dynamics_of_fact'));
+        $data = $request->only('ro_number', 'seal_number', 'dynamics_of_fact');
+        Success::find($success->id)->update($data);
+        return to_route('search.index')->with('success','O êxito foi editado!');
+    }
+
+
 }

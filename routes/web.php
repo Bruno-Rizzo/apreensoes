@@ -15,8 +15,10 @@ Route::controller(SeizureController::class)->group(function(){
 });
 
 Route::controller(SuccessController::class)->group(function(){
-    Route::get('/success',  'index')->name('success.index');
-    Route::post('/success', 'store')->name('success.store');
+    Route::get('/success',                'index') ->name('success.index');
+    Route::post('/success',               'store') ->name('success.store');
+    Route::get('/success/{success}/edit', 'edit')  ->name('success.edit');
+    Route::put('/success/{success}',      'update')->name('success.update');
 });
 
 Route::controller(SearchController::class)->group(function(){
